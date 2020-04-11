@@ -104,8 +104,38 @@ JSX é uma sintaxe semelhante ao XML, onde você consegue escrever e compreender
 
 Em aplicações ReactJS podemos trabalhar com JSX. Ou seja, podemos colocar o HTML da nossa aplicação no mesmo arquivo do Javascript. Isso revolucionou o desenvolvimento web, com essa possibilidade.
 
-Usando o JSX podemos escrever estruturas HTML, e no mesmo arquivo que você escreve o código JavaScript. Ao contrário do passado, em vez de colocar JavaScript em HTML, o JSX nos permite colocar HTML em JavaScript. 
+Usando o JSX podemos escrever estruturas HTML, e no mesmo arquivo que você escreve o código JavaScript. Ao contrário do passado, em vez de colocar JavaScript em HTML, o JSX nos permite colocar HTML em JavaScript.
 
 O projeto que utiliza JSX deve possuir uma lib responsável para compilar esse código para que seja possível ser interpretado pelos browsers, já que o JSX não são interpretados pelos browsers.
 
 O JSX providencia uma sintaxe familiar para definir a árvore estrutural, e isso não requer um novo conhecimento e também não abandonamos o Javascript.
+
+
+## App Mobile - React Native
+
+### Abordagem tradicional de aplicações mobile
+
+Antigamente era possível desenvolver aplicativos mobile com linguagens de programação específicas. Sendo Objective-C e/ou Swift para iOS e Java e/ou Kotlin para Android.
+
+Chamamos isso de aplicativos nativos.
+
+Isso pode ser um trabalho mais árduo, além de ficar mais caro.
+
+
+### Abordagem do React Native para aplicações mobile
+
+O React Native surgiu em meados de 2015. Nele o nosso código é feito em Javascript. Não é convertido para código nativo, faz com que o dispositivo passe a entender o Javascript e a interface gerada é totalmente nativa.
+
+
+### Expo - O que é? Por que utilizamos?
+
+É um framework para o React Native. Não é um framework para arquitetura de pastas ou algo do tipo. É um conjunto de ferramentas, bibliotecas prontas para eu utilizar a grande maioria das funcionalidades de um celular.
+
+Sem o Expo, precisaremos ter em nosso computador instalados o Android Studio para obtermos o SDK do Android e o XCode para obtermos o SDK do iOS. Isso, claro, fará com que a nossa aplicação fique um pouca mais pesada. E, essas SDK's não são tão fáceis de instalar e deixar configuradas corretamente.
+
+
+#### Arquitetura do Expo
+
+No Expo, só nos preocupamos em desenvolver o nosso código Javascript.
+
+Com o Expo, nós iremos instalar um app em nosso celular chamado Expo. Dentro dele, temos tudo o que precisamos para desenvolver no React Native, como API's de mapas, geolocalização, câmera, etc.
