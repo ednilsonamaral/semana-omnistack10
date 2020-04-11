@@ -12,17 +12,19 @@ module.exports = {
 
     const devs = await Dev.find({
       techs: { $in: techsArr }, // Filtrar por tecnologias
-      location: {
-        // Buscar todos os devs num raio de 10km
-        $near: {
-          $geometry: {
-            type: 'Point',
-            coordinates: [longitude, latitude]
-          },
-          $maxDistance: 10000
-        }
-      }
+      // location: {
+      //   // Buscar todos os devs num raio de 10km
+      //   $near: {
+      //     $geometry: {
+      //       type: 'Point',
+      //       coordinates: [longitude, latitude]
+      //     },
+      //     $maxDistance: 10000
+      //   }
+      // }
     })
+
+    console.log('devs: ', devs)
 
     return res.status(200).json({ devs })
   }
